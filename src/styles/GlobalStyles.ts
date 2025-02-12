@@ -1,12 +1,29 @@
 import { createGlobalStyle } from "styled-components";
+import backgroundImg from "../img/backgroud.jpg"
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        background: #FFFFFF;
+        background: url(${backgroundImg});
         font-family: 'Noto Sans', sans-serif;
+        color: #483C32;
     }
     input::placeholder {
-		color: #828282;
+		/* color: #828282; */
+        color: #483C32;
 		font-size: 16px;
 	}
+    .header-text {
+        color: #483C32;
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    button {
+        background: #e26f66;
+        color: #FFFFFF;
+        border: solid;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
 `;
