@@ -4,7 +4,9 @@ import backgroundImg from "../img/backgroud.jpg"
 export const GlobalStyle = createGlobalStyle`
     body {
         background: url(${backgroundImg});
-        font-family: 'Noto Sans', sans-serif;
+        background-size: auto;
+        /* font-family: 'Noto Sans', sans-serif; */
+        font-family: "Pangolin", serif;
         color: #483C32;
     }
     input::placeholder {
@@ -16,7 +18,13 @@ export const GlobalStyle = createGlobalStyle`
         color: #483C32;
         font-weight: bold;
         font-size: 32px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    p {
+        color: #483C32;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
     button {
         background: #e26f66;
