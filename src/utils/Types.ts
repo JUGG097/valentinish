@@ -1,3 +1,3 @@
-export type protectedRouteProps = {
-    children: JSX.Element;
+export type ProtectedRouteProps = {
+    children: React.ReactNode;
 }
