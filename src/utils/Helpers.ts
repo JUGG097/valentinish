@@ -18,12 +18,12 @@ export const deleteTokenFromLocalStorage = (key: string) => {
 
 export const successNotification = (msg: string) => {
 	toast.success(msg, {
-		position: toast.POSITION.TOP_CENTER,
+		position: "top-center",
 	});
 };
 
 export const errorNotification = (msg: string) => {
 	toast.error(msg, {
-		position: toast.POSITION.TOP_CENTER,
+		position: "top-center",
 	});
 };

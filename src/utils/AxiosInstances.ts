@@ -7,7 +7,7 @@ import {
 
 export const axiosClient = axios.create({
 	baseURL:
-		process.env.NODE_ENV === "production"
+		import.meta.env.NODE_ENV === "production"
 			? SERVER_PROD_URL + ""
 			: SERVER_DEV_URL + "",
 });
