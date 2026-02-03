@@ -30,8 +30,7 @@
     "upgrade-deps": "npx npm-check-updates -u && npm install"
   },
   "eslintConfig": {
-    "extends": [
-    ]
+    "extends": []
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",

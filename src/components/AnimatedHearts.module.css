@@ -1,0 +1,64 @@
+.heartBg {
+	position: absolute;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.animateFloat {
+	animation-name: float;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.animateSparkle {
+	animation-name: sparkle;
+	animation-duration: 2.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+@keyframes sparkle {
+	0% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	40% {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+	80% {
+		transform: scale(0.95);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+}
+
+/* Moved from src/App.css - scoped to this component */
+.glass {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.revealBtnGlow {
+	box-shadow: 0 0 20px rgba(225, 29, 72, 0.4);
+}
