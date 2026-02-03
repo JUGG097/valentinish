@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import GlassCard from "../components/GlassCard";
 
 const QuestionPage: React.FC = () => {
@@ -49,6 +50,21 @@ const QuestionPage: React.FC = () => {
 
 		setNoPos({ x, y });
 		setAttempts((a) => a + 1);
+	};
+
+	// Hilarious reasons to discourage saying "No"
+	const noReasons = [
+		"Abeg no break this Ijebu boy heart 😅",
+		"The cake has feelings too — say yes for the cake 🍰",
+		"Scientists say saying yes increases happiness by 12% (probably).",
+		"An awkward family story will be born if you say no — choose wisely.",
+		"Saying yes unlocks the secret level of happiness. Don't miss it!",
+		"I already rehearsed my speech. Please don't make me redo it. 😅",
+	];
+
+	const showNoReasonToast = () => {
+		const r = noReasons[Math.floor(Math.random() * noReasons.length)];
+		toast.info(r, { position: "top-center", autoClose: 3500 });
 	};
 
 	return (
@@ -106,6 +122,7 @@ const QuestionPage: React.FC = () => {
 							onClick={(e) => {
 								e.preventDefault();
 								moveNoButton();
+								showNoReasonToast();
 							}}
 						>
 							<span>No</span>
